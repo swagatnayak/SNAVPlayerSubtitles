@@ -22,7 +22,7 @@ pod 'SNAVPlayerSubtitles'
 
 ## Author
 
-swagatnayak, swagat@connectingdotsinfotech.com
+swagatnayak, swagat.nyk@gmail.com
 
 ## License
 
