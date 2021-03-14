@@ -72,8 +72,9 @@ class SubtitleWithAVPlayerViewController: UIViewController, AVPlayerViewControll
         self.playerViewController?.player = player
         self.playerViewController?.delegate = self
         self.playerViewController?.player?.play()
+        
         // MARK: - Enter subtitle url here here (srt or vtt)
-        self.playerViewController?.addSubtitles().open(fileFromRemote: URL(string: "https://gist.githubusercontent.com/samdutton/ca37f3adaf4e23679957b8083e061177/raw/e19399fbccbc069a2af4266e5120ae6bad62699a/sample.vtt")!)
+        self.playerViewController?.addSubtitles().open(fileFromRemote: URL(string: "https://raw.githubusercontent.com/swagatnayak/SNAVPlayerSubtitles/master/SNAVPlayerSubtitlesSample")!)
         
         self.present(playerViewController!, animated: true, completion: nil)
         
