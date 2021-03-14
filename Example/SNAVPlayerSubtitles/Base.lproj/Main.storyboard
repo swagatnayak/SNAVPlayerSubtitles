@@ -18,12 +18,91 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="jUM-fs-KCI">
+                                <rect key="frame" x="16" y="322" width="358" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcl-ZY-AuV">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="54.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="26m-PK-yW0">
+                                        <rect key="frame" x="0.0" y="72.666666666666686" width="358" height="54.666666666666657"/>
+                                        <color key="backgroundColor" red="1" green="0.60392156862745094" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="AVPlayerViewController">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onPlayWithAvplayerViewControllerPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oFV-2q-Zld"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUj-ZT-Y1e">
+                                        <rect key="frame" x="0.0" y="145.33333333333331" width="358" height="54.666666666666657"/>
+                                        <color key="backgroundColor" red="1" green="0.37199067321625146" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="AVPlayer">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onPlayWithAvplayerPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="quz-U6-XP6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="X9f-3s-UAM"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://cocoapods.org/pods/SNAVPlayerSubtitles" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLy-iV-sDL">
+                                <rect key="frame" x="16" y="769.33333333333337" width="358" height="40.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YA1-sV-Dk2">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="89"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SNAVPlayerSubtitles Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWc-vi-qm9">
+                                        <rect key="frame" x="0.0" y="58.666666666666664" width="390" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.56558893202857075" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="UR9-dg-GiZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="yWc-vi-qm9" secondAttribute="bottom" constant="10" id="g4H-56-UWh"/>
+                                    <constraint firstAttribute="trailing" secondItem="yWc-vi-qm9" secondAttribute="trailing" id="gNm-UN-G6x"/>
+                                    <constraint firstItem="yWc-vi-qm9" firstAttribute="leading" secondItem="YA1-sV-Dk2" secondAttribute="leading" id="iJb-Ev-A02"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MLy-iV-sDL" secondAttribute="bottom" id="0Mc-Gr-0cq"/>
+                            <constraint firstItem="jUM-fs-KCI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8cs-j1-eEv"/>
+                            <constraint firstItem="YA1-sV-Dk2" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Cjg-K5-a52"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jUM-fs-KCI" secondAttribute="trailing" id="EM0-hC-LZ8"/>
+                            <constraint firstItem="YA1-sV-Dk2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Wc6-3l-OLT"/>
+                            <constraint firstItem="jUM-fs-KCI" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="b9g-Io-KcP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MLy-iV-sDL" secondAttribute="trailing" id="cGB-Xk-T18"/>
+                            <constraint firstItem="jUM-fs-KCI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="hX9-Br-PX8"/>
+                            <constraint firstItem="MLy-iV-sDL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="jqY-Gv-bdj"/>
+                            <constraint firstAttribute="trailing" secondItem="YA1-sV-Dk2" secondAttribute="trailing" id="r2L-EU-QSk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hyperLinktext" destination="MLy-iV-sDL" id="WRg-6k-uFc"/>
+                        <outlet property="playWithAVPlayerBTN" destination="zUj-ZT-Y1e" id="by7-aC-Q2r"/>
+                        <outlet property="playWithAVPlayerViewControllerBTN" destination="26m-PK-yW0" id="ZTr-5R-lLo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34" y="112"/>
+            <point key="canvasLocation" x="33.846153846153847" y="111.61137440758293"/>
         </scene>
     </scenes>
 </document>

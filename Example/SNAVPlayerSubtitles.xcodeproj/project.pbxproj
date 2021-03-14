@@ -14,6 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		8DEAB51425FE224500180BB5 /* SubtitleWithAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAB51325FE224500180BB5 /* SubtitleWithAVPlayerViewController.swift */; };
+		8DEAB51925FE2AD100180BB5 /* SNAVPlayerSubtitles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEAB51825FE2AD100180BB5 /* SNAVPlayerSubtitles.framework */; };
 		D0973A5FAF400814CF01B381 /* Pods_SNAVPlayerSubtitles_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C61F1B62870A75B67442AF /* Pods_SNAVPlayerSubtitles_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7BF3B57B2249FAA666612248 /* Pods_SNAVPlayerSubtitles_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNAVPlayerSubtitles_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C61F1B62870A75B67442AF /* Pods_SNAVPlayerSubtitles_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNAVPlayerSubtitles_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DEAB51325FE224500180BB5 /* SubtitleWithAVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleWithAVPlayerViewController.swift; sourceTree = "<group>"; };
+		8DEAB51825FE2AD100180BB5 /* SNAVPlayerSubtitles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SNAVPlayerSubtitles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70E28048810029E570FFB53 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BF3CC3937DAE20E0C09729ED /* Pods-SNAVPlayerSubtitles_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNAVPlayerSubtitles_Example.release.xcconfig"; path = "Target Support Files/Pods-SNAVPlayerSubtitles_Example/Pods-SNAVPlayerSubtitles_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D1B0540FF3D033DF71CBF8A2 /* SNAVPlayerSubtitles.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SNAVPlayerSubtitles.podspec; path = ../SNAVPlayerSubtitles.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -55,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0973A5FAF400814CF01B381 /* Pods_SNAVPlayerSubtitles_Example.framework in Frameworks */,
+				8DEAB51925FE2AD100180BB5 /* SNAVPlayerSubtitles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,11 +98,10 @@
 		607FACD21AFB9204008FA782 /* Example for SNAVPlayerSubtitles */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				8DEAB51025FE16A600180BB5 /* Controller */,
+				8DEAB50F25FE168F00180BB5 /* View */,
+				8DEAB50625FDF5BE00180BB5 /* WithOnlyAVPlayer */,
+				8DEAB50525FDF59600180BB5 /* WithAVPlayerViewController */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for SNAVPlayerSubtitles";
@@ -107,6 +111,8 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -142,10 +148,43 @@
 		72BDBA536507664AAC8C24F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8DEAB51825FE2AD100180BB5 /* SNAVPlayerSubtitles.framework */,
 				89C61F1B62870A75B67442AF /* Pods_SNAVPlayerSubtitles_Example.framework */,
 				7BF3B57B2249FAA666612248 /* Pods_SNAVPlayerSubtitles_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DEAB50525FDF59600180BB5 /* WithAVPlayerViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WithAVPlayerViewController;
+			sourceTree = "<group>";
+		};
+		8DEAB50625FDF5BE00180BB5 /* WithOnlyAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WithOnlyAVPlayer;
+			sourceTree = "<group>";
+		};
+		8DEAB50F25FE168F00180BB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8DEAB51025FE16A600180BB5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DEAB51325FE224500180BB5 /* SubtitleWithAVPlayerViewController.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		EE23E563422D71CBECC4CD03 /* Pods */ = {
@@ -331,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				8DEAB51425FE224500180BB5 /* SubtitleWithAVPlayerViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
