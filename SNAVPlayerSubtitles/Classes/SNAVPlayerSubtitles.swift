@@ -2,7 +2,7 @@
 //  SNAVPlayerSubtitles.swift
 //  Pods-SNAVPlayerSubtitles_Example
 //
-//  Created by SWAGAT-CDI on 14/03/21.
+//  Created by SWAGAT NAYAK on 14/03/21.
 //
 import ObjectiveC
 import MediaPlayer

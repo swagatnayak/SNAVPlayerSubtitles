@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Subtitle WithAV Player View Controller-->
+        <scene sceneID="8WB-Op-h6w">
+            <objects>
+                <viewController storyboardIdentifier="SubtitleWithAVPlayerViewControllerScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rVF-KN-dgz" customClass="SubtitleWithAVPlayerViewController" customModule="SNAVPlayerSubtitles_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CdG-6E-fqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RhC-2p-bEb">
+                                <rect key="frame" x="12" y="44" width="390" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="chT-GI-BRj">
+                                        <rect key="frame" x="0.0" y="290.5" width="390" height="237.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Aep-w6-XhW">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="80.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play using default url" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcx-py-znu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="crv-pX-1CB">
+                                                        <rect key="frame" x="0.0" y="30.5" width="390" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoR-zs-KuI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
+                                                                <color key="backgroundColor" red="1" green="0.59944836850000005" blue="0.1457638859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="PLAY USING DEFAULT URL">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="playUsingDefaultUrlBTNPressed:" destination="rVF-KN-dgz" eventType="touchUpInside" id="Qbu-k7-Ndu"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="yEO-I5-Agc"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNs-jx-eF5">
+                                                <rect key="frame" x="0.0" y="108.5" width="390" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Kex-WK-A1W">
+                                                <rect key="frame" x="0.0" y="157" width="390" height="80.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your subtitle url here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRu-Ja-ep5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="qpi-v6-ymL">
+                                                        <rect key="frame" x="0.0" y="30.5" width="390" height="50"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your url" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iuv-Rj-XvZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="285.5" height="50"/>
+                                                                <color key="backgroundColor" red="0.8784919507575758" green="0.8784919507575758" blue="0.8784919507575758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" red="0.04726957071" green="0.04726957071" blue="0.04726957071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idi-Jg-pdy">
+                                                                <rect key="frame" x="291.5" y="0.0" width="98.5" height="50"/>
+                                                                <color key="backgroundColor" red="1" green="0.59944836850000005" blue="0.1457638859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="PLAY">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="playUsingInputUrlBTNPressed:" destination="rVF-KN-dgz" eventType="touchUpInside" id="Knp-Aw-DAf"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="yXI-53-dbr"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7R-qH-aR7">
+                                        <rect key="frame" x="12" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="dp4-tg-QH7"/>
+                                            <constraint firstAttribute="height" constant="30" id="eSS-Im-3Ib"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.0" green="0.56558893200000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="arrow.backward" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBackBtnPressed:" destination="rVF-KN-dgz" eventType="touchUpInside" id="5gS-tP-Y3U"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="chT-GI-BRj" firstAttribute="centerY" secondItem="RhC-2p-bEb" secondAttribute="centerY" id="5lr-Cz-pRu"/>
+                                    <constraint firstItem="f7R-qH-aR7" firstAttribute="leading" secondItem="RhC-2p-bEb" secondAttribute="leading" constant="12" id="9do-RJ-mdv"/>
+                                    <constraint firstAttribute="trailing" secondItem="chT-GI-BRj" secondAttribute="trailing" id="GXA-Mw-fAx"/>
+                                    <constraint firstItem="chT-GI-BRj" firstAttribute="centerX" secondItem="RhC-2p-bEb" secondAttribute="centerX" id="T5a-f3-QCe"/>
+                                    <constraint firstItem="chT-GI-BRj" firstAttribute="leading" secondItem="RhC-2p-bEb" secondAttribute="leading" id="neE-TZ-zhp"/>
+                                    <constraint firstItem="f7R-qH-aR7" firstAttribute="top" secondItem="RhC-2p-bEb" secondAttribute="top" constant="10" id="qO9-bT-fgo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OzM-sz-E45"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RhC-2p-bEb" firstAttribute="leading" secondItem="OzM-sz-E45" secondAttribute="leading" constant="12" id="8ZA-6j-ory"/>
+                            <constraint firstItem="RhC-2p-bEb" firstAttribute="top" secondItem="OzM-sz-E45" secondAttribute="top" id="Hhb-AY-aTM"/>
+                            <constraint firstItem="OzM-sz-E45" firstAttribute="bottom" secondItem="RhC-2p-bEb" secondAttribute="bottom" id="Kdz-Rt-OMQ"/>
+                            <constraint firstItem="OzM-sz-E45" firstAttribute="trailing" secondItem="RhC-2p-bEb" secondAttribute="trailing" constant="12" id="ppO-iT-6Rt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playUsingDefaultUrlBTN" destination="qoR-zs-KuI" id="kpc-Ub-9r0"/>
+                        <outlet property="playUsingInputUrlBTN" destination="Idi-Jg-pdy" id="MgZ-1p-eUe"/>
+                        <outlet property="subtitleInputField" destination="Iuv-Rj-XvZ" id="m9F-FT-qC9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRf-n0-HxQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1006" y="-100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		8D2885C025FE5DD300478180 /* SubtitleWithAVPlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2885BF25FE5DD300478180 /* SubtitleWithAVPlayerViewController.storyboard */; };
 		8DEAB51425FE224500180BB5 /* SubtitleWithAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAB51325FE224500180BB5 /* SubtitleWithAVPlayerViewController.swift */; };
 		8DEAB51925FE2AD100180BB5 /* SNAVPlayerSubtitles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEAB51825FE2AD100180BB5 /* SNAVPlayerSubtitles.framework */; };
 		D0973A5FAF400814CF01B381 /* Pods_SNAVPlayerSubtitles_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C61F1B62870A75B67442AF /* Pods_SNAVPlayerSubtitles_Example.framework */; };
@@ -45,6 +46,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7BF3B57B2249FAA666612248 /* Pods_SNAVPlayerSubtitles_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNAVPlayerSubtitles_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C61F1B62870A75B67442AF /* Pods_SNAVPlayerSubtitles_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNAVPlayerSubtitles_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D2885BF25FE5DD300478180 /* SubtitleWithAVPlayerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubtitleWithAVPlayerViewController.storyboard; sourceTree = "<group>"; };
 		8DEAB51325FE224500180BB5 /* SubtitleWithAVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleWithAVPlayerViewController.swift; sourceTree = "<group>"; };
 		8DEAB51825FE2AD100180BB5 /* SNAVPlayerSubtitles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SNAVPlayerSubtitles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70E28048810029E570FFB53 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			children = (
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				8D2885BF25FE5DD300478180 /* SubtitleWithAVPlayerViewController.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				8D2885C025FE5DD300478180 /* SubtitleWithAVPlayerViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +536,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -547,6 +552,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
