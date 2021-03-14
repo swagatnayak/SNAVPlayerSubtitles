@@ -79,6 +79,7 @@ class SubtitleWithAVPlayerViewController: UIViewController, AVPlayerViewControll
         
     }
     
+    
     @IBAction func playUsingInputUrlBTNPressed(_ sender: UIButton) {
         
         if self.subtitleInputField.text == "" {
