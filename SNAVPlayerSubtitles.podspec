@@ -9,7 +9,9 @@
 Pod::Spec.new do |s|
   s.name             = 'SNAVPlayerSubtitles'
   s.version          = '0.1.0'
+  s.swift_versions   = '4.2'
   s.summary          = 'Easy way to add Subtitle to AVPlayer'
+  s.exclude_files    = 'Constrictor/Constrictor/*.plist'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
