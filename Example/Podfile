@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'SNAVPlayerSubtitles_Example' do
+  pod 'SNAVPlayerSubtitles', :path => '../'
+
+  target 'SNAVPlayerSubtitles_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

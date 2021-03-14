@@ -1,0 +1,16 @@
+PODS:
+  - SNAVPlayerSubtitles (0.1.0)
+
+DEPENDENCIES:
+  - SNAVPlayerSubtitles (from `../`)
+
+EXTERNAL SOURCES:
+  SNAVPlayerSubtitles:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SNAVPlayerSubtitles: b932f25e15a83428c2d2692851140236b4b7291b
+
+PODFILE CHECKSUM: 83b41f54523adb3cb308952467eae8b22b03b2f8
+
+COCOAPODS: 1.10.1
