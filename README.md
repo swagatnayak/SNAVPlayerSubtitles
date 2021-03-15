@@ -1,14 +1,14 @@
 
 <h1>
-<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <img src="https://github.com/swagatnayak/SNAVPlayerSubtitles/blob/master/RefFiles/play.png?raw=true" width="300" height="300" />
 </h1>
 
-<h1>
-    <h1>SNAVPlayerSubtitles</h1>
-    <img src="https://img.shields.io/cocoapods/v/SNAVPlayerSubtitles.svg?style=flat"/>
-    <img src="https://img.shields.io/cocoapods/l/SNAVPlayerSubtitles.svg?style=flat"/>
-    <img src="https://img.shields.io/cocoapods/p/SNAVPlayerSubtitles.svg?style=flat"/>
-</h1>
+# SNAVPlayerSubtitles
+
+[![CI Status](https://img.shields.io/travis/swagatnayak/SNAVPlayerSubtitles.svg?style=flat)](https://travis-ci.org/swagatnayak/SNAVPlayerSubtitles)
+ [![Version](https://img.shields.io/cocoapods/v/SNAVPlayerSubtitles.svg?style=flat)](https://cocoapods.org/pods/SNAVPlayerSubtitles)
+ [![License](https://img.shields.io/cocoapods/l/SNAVPlayerSubtitles.svg?style=flat)](https://cocoapods.org/pods/SNAVPlayerSubtitles)
+ [![Platform](https://img.shields.io/cocoapods/p/SNAVPlayerSubtitles.svg?style=flat)](https://cocoapods.org/pods/SNAVPlayerSubtitles)
 
 
 # Example
@@ -41,9 +41,7 @@ pod install
 
 # Uses
 
-<h4 style="color: darkblue;">1.) &nbsp;&nbsp;For AVPlayerController</h4>
-
----
+> For AVPlayerController
 
 ```swift
 // Declare AVPlayerViewController
@@ -75,9 +73,9 @@ self.playerViewController.player.play()
 ```
 
 
-<h4 style="color: darkblue;">2.) &nbsp;&nbsp;For Directly use in AVPlayer</h4>
+#
 
----
+>For Directly use in AVPlayer
 
 
 ```swift
@@ -110,7 +108,7 @@ self.player.play()
 # Author
 
 <h1>
- <img src="https://avatars.githubusercontent.com/u/36082457?s=400&u=a84a6c07d1922a6edd85541b94fc5cfc0a0ac892&v=4" width="80" height="80" style="border-radius: 50%;" />
+ <img src="https://avatars.githubusercontent.com/u/36082457?s=400&u=a84a6c07d1922a6edd85541b94fc5cfc0a0ac892&v=4" width="80" height="80"  />
 </h1>
 
 #### Swagat Nayak
@@ -120,9 +118,12 @@ self.player.play()
 
 SNAVPlayerSubtitles is available under the MIT license. See the LICENSE file for more info.
 
-## Image
-https://avatars.githubusercontent.com/u/36082457?s=400&u=a84a6c07d1922a6edd85541b94fc5cfc0a0ac892&v=4
+# Samples
+
  <h1>
- <img src="https://storage.googleapis.com/material-design/publish/material_v_10/assets/0Bzhp5Z4wHba3cXVadmtJa19wT3M/components_cards_content1.png" width="360" height="640" />
- <img src="https://storage.googleapis.com/material-design/publish/material_v_10/assets/0Bzhp5Z4wHba3NGo3QkpVWTNBZzA/components_cards_content3.png" align="right" width="360" height="640" />
+ <img src="https://github.com/swagatnayak/SNAVPlayerSubtitles/blob/master/RefFiles/Screenshot1.png?raw=true" />
+ </h1>
+
+ <h1>
+ <img src="https://github.com/swagatnayak/SNAVPlayerSubtitles/blob/master/RefFiles/Screenshot2.png?raw=true"  />
  </h1>
