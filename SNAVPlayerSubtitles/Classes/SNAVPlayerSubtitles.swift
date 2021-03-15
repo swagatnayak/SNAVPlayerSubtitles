@@ -347,7 +347,7 @@ public extension AVPlayerViewController {
             // Label
             subtitleLabel = UILabel()
             subtitleLabel?.translatesAutoresizingMaskIntoConstraints = false
-            subtitleLabel?.backgroundColor = UIColor.clear
+            subtitleLabel?.backgroundColor = UIColor.black.withAlphaComponent(CGFloat(0.6))
             subtitleLabel?.textAlignment = .center
             subtitleLabel?.numberOfLines = 0
             subtitleLabel?.font = UIFont.boldSystemFont(ofSize: UI_USER_INTERFACE_IDIOM() == .pad ? 40.0 : 22.0)
@@ -360,6 +360,8 @@ public extension AVPlayerViewController {
             subtitleLabel?.layer.shouldRasterize = true;
             subtitleLabel?.layer.rasterizationScale = UIScreen.main.scale
             subtitleLabel?.lineBreakMode = .byWordWrapping
+            subtitleLabel?.layer.cornerRadius = 8
+            subtitleLabel?.clipsToBounds = true
             contentOverlayView?.addSubview(subtitleLabel!)
             
             // Position
