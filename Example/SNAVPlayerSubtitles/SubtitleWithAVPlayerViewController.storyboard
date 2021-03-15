@@ -72,15 +72,18 @@
                                                         <rect key="frame" x="0.0" y="30.5" width="390" height="50"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your url" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iuv-Rj-XvZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="285.5" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="294" height="50"/>
                                                                 <color key="backgroundColor" red="0.8784919507575758" green="0.8784919507575758" blue="0.8784919507575758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color key="textColor" red="0.04726957071" green="0.04726957071" blue="0.04726957071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idi-Jg-pdy">
-                                                                <rect key="frame" x="291.5" y="0.0" width="98.5" height="50"/>
+                                                                <rect key="frame" x="300" y="0.0" width="90" height="50"/>
                                                                 <color key="backgroundColor" red="1" green="0.59944836850000005" blue="0.1457638859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="90" id="0eJ-mx-udu"/>
+                                                                </constraints>
                                                                 <state key="normal" title="PLAY">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>

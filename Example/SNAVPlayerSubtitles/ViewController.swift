@@ -57,6 +57,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onPlayWithAvplayerPressed(_ sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "SubtitleWithAVPlayer", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SubtitleWithAVPlayerScreen") as! SubtitleWithAVPlayerController
+        nextViewController.modalPresentationStyle = .fullScreen
+        self.present(nextViewController, animated:true, completion:nil)
     }
     
 }

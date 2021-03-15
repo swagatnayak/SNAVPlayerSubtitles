@@ -11,7 +11,11 @@ import AVKit
 import SNAVPlayerSubtitles
 
 
-class SubtitleWithAVPlayerViewController: UIViewController, AVPlayerViewControllerDelegate {
+class SubtitleWithAVPlayerViewController: UIViewController, AVPlayerViewControllerDelegate, SNAVPlayerSubtitlesDelegate {
+    func onError(msg: String) {
+        print("--------\(msg)")
+    }
+    
 
     
     // MARK: - IB Outlets
@@ -34,10 +38,27 @@ class SubtitleWithAVPlayerViewController: UIViewController, AVPlayerViewControll
     // ---------------------------------------
     var playerViewController: AVPlayerViewController?
 
-    
-    
+
+
     // MARK: - Helper Methods
     // ---------------------------------------
+    
+    func initiatePlayerViewController() {
+        
+        // MARK: - Enter media url here here
+        guard let url = URL(string: "http://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel.ism/.m3u8") else {
+            return
+        }
+
+        let player = AVPlayer(url: url)
+        self.playerViewController = AVPlayerViewController()
+        self.playerViewController?.player = player
+        self.playerViewController?.delegate = self
+        
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,10 +67,8 @@ class SubtitleWithAVPlayerViewController: UIViewController, AVPlayerViewControll
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        
-        // Do any additional setup after loading the view.
-        
-
+        initiatePlayerViewController()
+    
     }
     
     
@@ -62,22 +81,13 @@ class SubtitleWithAVPlayerViewController: UIViewController, AVPlayerViewControll
     
     @IBAction func playUsingDefaultUrlBTNPressed(_ sender: UIButton) {
         
-        // MARK: - Enter media url here here
-        guard let url = URL(string: "http://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel.ism/.m3u8") else {
-            return
-        }
-
-        let player = AVPlayer(url: url)
-        self.playerViewController = AVPlayerViewController()
-        self.playerViewController?.player = player
-        self.playerViewController?.delegate = self
-        self.playerViewController?.player?.play()
-        
         
         // MARK: - Enter subtitle url here here (srt or vtt)
         self.playerViewController?.addSubtitles().open(fileFromRemote: URL(string: "https://raw.githubusercontent.com/swagatnayak/SNAVPlayerSubtitles/master/SNAVPlayerSubtitlesSample")!)
         
         self.present(playerViewController!, animated: true, completion: nil)
+        self.playerViewController?.player?.play()
+
         
     }
     
@@ -86,6 +96,11 @@ class SubtitleWithAVPlayerViewController: UIViewController, AVPlayerViewControll
         
         if self.subtitleInputField.text == "" {
             showToast(message: "URL Required")
+        }else{
+            
+            self.playerViewController?.addSubtitles().open(fileFromRemote: URL(string: self.subtitleInputField.text ?? "")!)
+            self.present(playerViewController!, animated: true, completion: nil)
+            self.playerViewController?.player?.play()
         }
     }
     
