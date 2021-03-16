@@ -131,6 +131,12 @@ self.player.play()
 #### Swagat Nayak
 ###### swagat.nyk@gmail.com
 
+<h1>
+<a href="https://www.linkedin.com/in/swagat-nayak-21097a141"><img src="https://img.icons8.com/fluent/50/000000/linkedin.png"/></a>
+<a href="https://twitter.com/SwagatN16141870"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+<a href="https://github.com/swagatnayak"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+</h1>
+
 # License
 
 SNAVPlayerSubtitles is available under the MIT license. See the LICENSE file for more info.
