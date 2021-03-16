@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SNAVPlayerSubtitles'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.swift_versions   = '4.2'
   s.summary          = 'Easy way to add Subtitle to AVPlayer'
 
@@ -23,12 +23,12 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/swagatnayak/SNAVPlayerSubtitles'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://github.com/swagatnayak/SNAVPlayerSubtitles/blob/master/RefFiles/Screenshot1.png?raw=true', 'https://github.com/swagatnayak/SNAVPlayerSubtitles/blob/master/RefFiles/Screenshot2.png?raw=true'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'swagatnayak' => 'swagat.nyk@gmail.com' }
   s.source           = { :git => 'https://github.com/swagatnayak/SNAVPlayerSubtitles.git', :branch => 'master', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.social_media_url = 'https://www.linkedin.com/in/swagat-nayak-21097a141'
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'SNAVPlayerSubtitles/Classes/*.swift'
@@ -38,7 +38,6 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.frameworks = 'UIKit', 'AVKit'
 end

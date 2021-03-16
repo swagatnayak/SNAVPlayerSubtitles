@@ -1,6 +1,6 @@
 
 <h1>
-    <img src="https://github.com/swagatnayak/SNAVPlayerSubtitles/blob/master/RefFiles/play.png?raw=true" width="300" height="300" />
+    <img src="https://github.com/swagatnayak/SNAVPlayerSubtitles/blob/master/RefFiles/play.png?raw=true" width="200" height="200" />
 </h1>
 
 # SNAVPlayerSubtitles
@@ -41,7 +41,7 @@ pod install
 
 # Uses
 
-> For AVPlayerController
+> For AVPlayerViewController
 
 ```swift
 // Declare AVPlayerViewController
@@ -61,11 +61,15 @@ self.playerViewController.player = player
 // Now to add subtitle
 
 //MARK: - For Remote url
-self.playerViewController.addSubtitles().open(fileFromRemote: subtitleURL)
+self.playerViewController.addSubtitles(textStyle: .CLEAR_BACKGROUND).open(fileFromRemote: subtitleURL,type: .VTT)
 
 //MARK: - For local file
-self.playerViewController.addSubtitles().open(fileFromLocal: "")
-
+self.playerViewController.addSubtitles(textStyle: .CLEAR_BACKGROUND).open(fileFromLocal: "",type: .VTT)
+/*
+NOTE : 
+    textStyle -> Optional (default -> .CLEAR_BACKGROUND)
+    type -> Required (Must be .SRT or .VTT)
+*/
 
 // Now Play media
 self.playerViewController.player.play()
@@ -93,16 +97,29 @@ let player = AVPlayer(url: videoURL)
 // Now to add subtitle
 
 //MARK: - For Remote url
-self.player.addSubtitles().open(fileFromRemote: subtitleURL)
+self.player.addSubtitles(textStyle: .CLEAR_BACKGROUND).open(fileFromRemote: subtitleURL,type: .VTT)
 
 //MARK: - For local file
-self.player.addSubtitles().open(fileFromLocal: "")
+self.player.addSubtitles(textStyle: .CLEAR_BACKGROUND).open(fileFromLocal: "",type: .VTT)
 
+/*
+NOTE : 
+    textStyle -> Optional (default -> .CLEAR_BACKGROUND)
+    type -> Required (Must be .SRT or .VTT)
+*/
 
 // Now Play media
 self.player.play()
 
 ```
+# Property
+
+>Property
+
+|Property|Remark|Accepted values|
+|---|---|---|
+| ``` .addSubtitles(textStyle: .CLEAR_BACKGROUND) ```|textStyle -> Optional<br/>Default value = .CLEAR_BACKGROUND|.CLEAR_BACKGROUND <br/> .BLACK_BACKGROUND|
+|``` .open(fileFromRemote: URL(string: ""),type: .VTT) ```|type  ->  Required*|.VTT <br/> .SRT|
 
 
 # Author

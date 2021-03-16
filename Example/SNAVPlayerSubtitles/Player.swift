@@ -69,7 +69,10 @@ class Player: UIViewController {
             
         
         }
-        self.player?.addSubtitles(view: self.playerView).open(fileFromRemote: URL(string: "https://raw.githubusercontent.com/swagatnayak/SNAVPlayerSubtitles/master/SNAVPlayerSubtitlesSample")!)
+        
+        // textStyle :  defie the backgrund of subtitle
+        // type : (Important) which type of subtile you passed
+        self.player?.addSubtitles(view: self.playerView,textStyle: .CLEAR_BACKGROUND).open(fileFromRemote: URL(string: "https://raw.githubusercontent.com/swagatnayak/SNAVPlayerSubtitles/master/SNAVPlayerSubtitlesSample")!,type: .VTT)
         
         player?.play()
       
@@ -88,7 +91,7 @@ class Player: UIViewController {
         if !self.isSubtitleShow {
             
             // MARK: - To show subtitle again you need to call open() again
-            self.player?.addSubtitles(view: self.playerView).open(fileFromRemote: URL(string: "https://raw.githubusercontent.com/swagatnayak/SNAVPlayerSubtitles/master/SNAVPlayerSubtitlesSample")!)
+            self.player?.addSubtitles(view: self.playerView,textStyle: .CLEAR_BACKGROUND).open(fileFromRemote: URL(string: "https://raw.githubusercontent.com/swagatnayak/SNAVPlayerSubtitles/master/SNAVPlayerSubtitlesSample")!,type: .VTT)
         }else{
         
             //MARK - Hide subtitle

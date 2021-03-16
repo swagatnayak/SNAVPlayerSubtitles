@@ -83,7 +83,9 @@ class SubtitleWithAVPlayerViewController: UIViewController, AVPlayerViewControll
         
         
         // MARK: - Enter subtitle url here here (srt or vtt)
-        self.playerViewController?.addSubtitles().open(fileFromRemote: URL(string: "https://raw.githubusercontent.com/swagatnayak/SNAVPlayerSubtitles/master/SNAVPlayerSubtitlesSample")!)
+        // textStyle :  defie the backgrund of subtitle
+        // type : (Important) which type of subtile you passed (vtt or srt)
+        self.playerViewController?.addSubtitles(textStyle: .CLEAR_BACKGROUND).open(fileFromRemote: URL(string: "https://raw.githubusercontent.com/swagatnayak/SNAVPlayerSubtitles/master/SNAVPlayerSubtitlesSample")!, type: .VTT)
         
         self.present(playerViewController!, animated: true, completion: nil)
         self.playerViewController?.player?.play()
@@ -98,7 +100,7 @@ class SubtitleWithAVPlayerViewController: UIViewController, AVPlayerViewControll
             showToast(message: "URL Required")
         }else{
             
-            self.playerViewController?.addSubtitles().open(fileFromRemote: URL(string: self.subtitleInputField.text ?? "")!)
+            self.playerViewController?.addSubtitles().open(fileFromRemote: URL(string: self.subtitleInputField.text ?? "")!,type: .VTT)
             self.present(playerViewController!, animated: true, completion: nil)
             self.playerViewController?.player?.play()
         }
