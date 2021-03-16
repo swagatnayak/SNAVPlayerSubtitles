@@ -27,8 +27,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'swagatnayak' => 'swagat.nyk@gmail.com' }
   s.source           = { :git => 'https://github.com/swagatnayak/SNAVPlayerSubtitles.git', :branch => 'master', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.social_media_url = 'https://www.linkedin.com/in/swagat-nayak-21097a141'
+  s.social_media_url = 'https://twitter.com/SwagatN16141870'
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'SNAVPlayerSubtitles/Classes/*.swift'
