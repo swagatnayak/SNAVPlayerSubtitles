@@ -356,6 +356,11 @@ public extension AVPlayerViewController {
         show(subtitles: contents,type: type)
     }
     
+    func hideSubtitle() {
+        
+        self.parsedPayload = nil
+    }
+    
     func open(fileFromRemote filePath: URL,type: SNAVP_SUBTITLE_TYPE, encoding: String.Encoding = String.Encoding.utf8) {
         
         
@@ -367,7 +372,7 @@ public extension AVPlayerViewController {
                 
                 //Check status code
                 if statusCode != 200 {
-                    
+                    self.hideSubtitle()
                     NSLog("Subtitle Error: \(httpResponse.statusCode) - \(error?.localizedDescription ?? "")")
                     return
                 }
@@ -537,22 +542,10 @@ public extension AVPlayer {
                 
                 //Check status code
                 if statusCode != 200 {
-                    let final = NSMutableDictionary()
-                    final["from"] = Double(0.196)
-                    final["to"] = Double(10.134)
-                    final["text"] = "Error"
-                    self.parsedPayload?.setValue(final, forKey: "0")
-                    
+                    self.hideSubtitle()
                     NSLog("Subtitle Error: \(httpResponse.statusCode) - \(error?.localizedDescription ?? "")")
                     return
                 }
-            }else{
-                let final = NSMutableDictionary()
-                final["from"] = Double(0.196)
-                final["to"] = Double(10.134)
-                final["text"] = "Error"
-                self.parsedPayload?.setValue(final, forKey: "0")
-
             }
             // Update UI elements on main thread
             DispatchQueue.main.async(execute: {
@@ -656,7 +649,6 @@ public extension AVPlayer {
             subtitleLabel?.layer.cornerRadius = 8
             subtitleLabel?.clipsToBounds = true
             subtitleLabel?.layer.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
-            subtitleLabel?.layer.backgroundColor = UIColor.black.withAlphaComponent(CGFloat(0.6)).cgColor
             subtitleLabel?.layer.rasterizationScale = UIScreen.main.scale
             subtitleLabel?.lineBreakMode = .byWordWrapping
             subtitleLabel?.isHidden = false
