@@ -9,6 +9,7 @@
  [![Version](https://img.shields.io/cocoapods/v/SNAVPlayerSubtitles.svg?style=flat)](https://cocoapods.org/pods/SNAVPlayerSubtitles)
  [![License](https://img.shields.io/cocoapods/l/SNAVPlayerSubtitles.svg?style=flat)](https://cocoapods.org/pods/SNAVPlayerSubtitles)
  [![Platform](https://img.shields.io/cocoapods/p/SNAVPlayerSubtitles.svg?style=flat)](https://cocoapods.org/pods/SNAVPlayerSubtitles)
+ [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=swagatnayak_SNAVPlayerSubtitles&metric=alert_status)](https://sonarcloud.io/dashboard?id=swagatnayak_SNAVPlayerSubtitles)
 
 
 # Example
