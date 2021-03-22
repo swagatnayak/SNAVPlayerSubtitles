@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SNAVPlayerSubtitles'
-  s.version          = '2.1'
+  s.version          = '2.2'
   s.swift_versions   = '4.2'
   s.summary          = 'Easy way to add Subtitle ( .VTT and .SRT ) to  AVPlayer'
 
